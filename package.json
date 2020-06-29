@@ -1,0 +1,26 @@
+{
+  "name": "modular-app",
+  "version": "1.0.0",
+  "main": "indexPage.js",
+  "scripts": {
+    "start": "./bin/nodemon node index.js",
+    "test": "nodemon index.js",
+    "sequelize:run-migration": "node_modules/.bin/sequelize db:migrate",
+    "sequelize:create-migration": "node_modules/.bin/sequelize db:migrate"
+  },
+  "author": "Dheeraj Patel",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.18.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "sequelize-cli": "^5.5.1"
+  },
+  "description": ""
+}
